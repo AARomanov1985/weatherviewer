@@ -1,0 +1,11 @@
+﻿*.class
+/target
+/nbproject
+/dist
+/build
+*.log
+*.war
+*.jar
+.idea
+.iml
+nb-configuration.xml

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.url">
+            jdbc:sqlite:database/database.db
+        </property>
+        <property name="hibernate.connection.autocommit">true</property>
+        <property name="hibernate.dialect">ru.AARomanov1985.weatherviewer.model.SQLiteDialect</property>
+        <!-- Mapping files -->
+        <mapping class="ru.AARomanov1985.weatherviewer.model.WeatherRecord"/>
+        <mapping class="ru.AARomanov1985.weatherviewer.model.Station"/>
+    </session-factory>
+</hibernate-configuration>
